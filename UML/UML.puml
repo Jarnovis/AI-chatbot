@@ -1,0 +1,117 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam linetype ortho
+'skinparam linetype polyline
+
+class FrameWorkGUI{
+# homeButton : Button
+
+# window()
+# showGUI()
+# homeButtonAction()
+}
+
+class InlogGUI{
+- gebruikersNaam : TextField
+- wachtwoord : PasswordField
+}
+
+class RegisterenGUI{
+- gebruikersNaam: TextField
+- wachtwoord: PasswordField
+}
+
+class MainGUI{
+}
+
+class ConnectDB{
++ dbConnect() : Connection
+}
+
+class Environment{
++ Environment()
++ isConfigured(): boolean
+}
+
+class CheckUser{
+- connectDB : ConnectDB
+
++ CheckUser()
++ checkUser(String)
+}
+
+class Registreren{
++ Registreren()
+}
+
+class WriteToDB{
++ registerNewUser(String, String)
+}
+
+class GetFromDB{
+
++ getItem() : Object
+}
+
+class Gesprek{
+}
+
+class FakeAI{
+}
+
+abstract class Observable{
+}
+
+interface IObserver{
+}
+
+FrameWorkGUI <|-- InlogGUI
+FrameWorkGUI <|-- RegisterenGUI
+FrameWorkGUI <|-- MainGUI
+
+ConnectDB <-- CheckUser: * uses 1
+WriteToDB --> ConnectDB: 1 uses *
+GetFromDB --> ConnectDB: 1 uses *
+
+Registreren --> WriteToDB: 1 uses *
+Registreren <- RegisterenGUI: 1 uses *
+Registreren <.. RegisterenGUI: <<create>>
+Registreren -> GetFromDB: 1 uses *
+Registreren ..> GetFromDB: <<create>>
+Registreren ..> WriteToDB: <<create>>
+
+InlogGUI -> CheckUser: 1 uses *
+InlogGUI ..> RegisterenGUI: <<create>>
+InlogGUI ..> MainGUI: <<create>>
+InlogGUI ..> CheckUser: <<create>>
+
+GetFromDB <- CheckUser: * uses 1
+GetFromDB ..> ConnectDB: <<create>>
+
+CheckUser ..> GetFromDB: <<create>>
+CheckUser ..> ConnectDB: <<create>>
+
+WriteToDB ..> ConnectDB: <<create>>
+
+MainGUI --> GetFromDB: * uses 1
+MainGUI ..> GetFromDB: <<create>>
+
+FakeAI --|> MainGUI
+
+ConnectDB --> Environment: 1 uses *
+ConnectDB ..> Environment: <<create>>
+
+Gesprek <|-- Observable
+Observable <|-- FakeAI
+Observable <|-- MainGUI
+Observable --> IObserver: uses
+
+IObserver <|-- FakeAI
+IObserver <|-- MainGUI
+
+Gesprek <-- FakeAI: uses
+Gesprek <-- MainGUI: uses
+
+
+
+@enduml

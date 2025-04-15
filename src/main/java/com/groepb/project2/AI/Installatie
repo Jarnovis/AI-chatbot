@@ -1,0 +1,15 @@
+Download:
+1. Download Ollama: https://ollama.com/library/llama3
+2. Open terminal en voer in: Ollama pull llama3
+3. Navigeer via terminal naar het huidige project naar de map Ollama
+4. Terminal: Ollama create Bob42 -f Bob42
+
+Gebruik:
+Roep Ollama3 aan door middel van:
+a: new Ollama3().getResponse(String) -> returnd een String
+
+b: Ollama3 ollama = new Ollama3()
+   ollama.getResponse(String) -> returnd een String
+
+(Als je Ollama3 via b implementeert maakt de class Ollama3 nog steeds opnieuw een verbinding met de huidige URL)
+(Om zo min mogelijk private variabelen te hebben: gebruik a)

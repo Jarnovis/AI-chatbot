@@ -1,0 +1,64 @@
+
+                                 BobGPT Tutorial
+
+ 1. Basisfunctionaliteiten
+
+Hier zijn de belangrijkste functies van BobGPT en hoe je ze kunt gebruiken.
+
+ 1.1 Een Vraag Stellen
+
+Je kunt BobGPT vragen stellen door gewoon te typen wat je wilt weten. Bijvoorbeeld:
+- Vraag: `"Hello, how are you?"`
+- Antwoord: `"I'm good, thank you! How about you?"`
+
+ 1.2 Taal Veranderen
+
+BobGPT ondersteunt zowel Engels als Nederlands. Om de taal te veranderen, geef je de volgende opdracht:
+- Vraag: `"Change language to Dutch"`
+- Antwoord: `"Language switched to Dutch."`
+
+ 2. Geavanceerde Functionaliteiten
+
+BobGPT kan ook bestanden lezen, zoeken en lijsten weergeven. Hier is hoe je deze functies kunt gebruiken.
+
+ 2.1 Bestanden Lezen
+
+Om de inhoud van een bestand te lezen, geef je de volgende opdracht:
+- Vraag: `"Read file example.txt"`
+- Antwoord: Inhoud van het bestand `example.txt`
+
+ 2.2 Zoeken in Bestanden
+
+Om te zoeken naar bepaalde trefwoorden in bestanden, geef je de volgende opdracht:
+- Vraag: `"Search for keywords"`
+- Antwoord: Resultaten van de zoekopdracht naar de opgegeven trefwoorden
+
+ 2.3 Beschikbare Bestanden Lijsten
+
+Om een lijst van alle beschikbare bestanden te krijgen, geef je de volgende opdracht:
+- Vraag: `"List files"`
+- Antwoord: Lijst van alle beschikbare bestanden
+
+ 3. Overige Functies
+
+BobGPT heeft ook enkele ingebouwde conversatie-mogelijkheden en emotieherkenning.
+
+ 3.1 Emotie Herkennen
+
+BobGPT kan positieve en negatieve emoties in je vragen herkennen en daarop reageren. Bijvoorbeeld:
+- Vraag: `"I am having a great day!"`
+- Antwoord: `"That's great to hear!"`
+- Vraag: `"I am feeling sad."`
+- Antwoord: `"That's unfortunate to hear!"`
+
+ 3.2 Algemene Vragen
+
+BobGPT kan ook op algemene vragen reageren. Bijvoorbeeld:
+- Vraag: `"What's your name?"`
+- Antwoord: `"My name is BobGPT."`
+- Vraag: `"Tell me a joke"`
+- Antwoord: `"Why don't scientists trust atoms? Because they make up everything!"`
+
+ Conclusie
+
+Voor alle te stellen vragen kan je in de code zelf kijken. Hierin kan je maps vinden met een vraag en een bijbehorend antwoord!

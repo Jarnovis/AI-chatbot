@@ -1,0 +1,47 @@
+.custom-text-field {
+    -fx-text-fill: #333333;
+    -fx-pref-height: 45px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1px;
+    -fx-min-width: 100px;
+    -fx-pref-width: 300px;
+    -fx-max-width: 300px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-border-color: #10a37f;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+}
+
+.custom-text-field:focused {
+    -fx-border-color: #10A37FFF;
+}
+
+.layout{
+    -fx-alignment: center;
+    -fx-font-size: 14;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-background-radius: 10;
+}
+
+.registerButton{
+    -fx-pref-height: 45px;
+    -fx-pref-width: 300px;
+    -fx-background-color: #10A37FFF;
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+    -fx-text-fill: white;
+}
+
+.bob{
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-font-size: 50;
+}
+
+.error{
+    -fx-text-fill: red;
+}
+
+.box{
+    -fx-alignment: center;
+}

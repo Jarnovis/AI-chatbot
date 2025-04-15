@@ -1,0 +1,11 @@
+Maak voor gebruik een file aan door middel van rechtermuisknop op de hoofdmap te klikken.
+Druk vervolgens op New > File 
+Noem de file .env
+In deze .env file copy en paste het volgende:
+
+DB_URL=jdbc:mysql://localhost:3306/DATABASE_NAAM_HIER
+DB_USER=USERNAME_DATABASE_HIER
+DB_PASS=WACHTWOORD_DATABASE_HIER
+
+Vul de eigen gegevens op de juiste plekken in.
+Run de tests om te kijken of de database verbinding maakt.
