@@ -1,4 +1,4 @@
-BobGPT
+BobGPT -> School project van private repo https://github.com/hhs-semester-se-s2/2324-Projectgroep-1b
 =========================================================================================
 Installatie Guide Bob42
 =========================================================================================
